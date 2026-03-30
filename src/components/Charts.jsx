@@ -3,8 +3,8 @@ import {
   AreaChart, Area, Legend, Cell
 } from 'recharts'
 
-const NAVY = '#1B3A6D'
-const NAVY_LIGHT = '#4A7CC9'
+const NAVY = '#002856'
+const NAVY_LIGHT = '#2D6AB4'
 const RED = '#E31E24'
 const GREEN = '#10B981'
 const SLATE = '#94A3B8'

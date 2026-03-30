@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         fb: {
-          navy: '#1B3A6D',
-          'navy-light': '#254B8A',
-          'navy-dark': '#122848',
-          red: '#E31E24',
-          'red-light': '#F04A4F',
-          'red-dark': '#B8181D',
+          navy: '#002856',
+          'navy-light': '#1B4B8A',
+          'navy-dark': '#001A3A',
+          red: '#EA0029',
+          'red-light': '#FF3352',
+          'red-dark': '#B8001F',
         },
       },
       fontFamily: {

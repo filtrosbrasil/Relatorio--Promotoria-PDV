@@ -48,3 +48,28 @@ export function exportPdvStatus(pdvList, filename = 'status-pdv') {
   XLSX.utils.book_append_sheet(wb, ws, 'Status PDV')
   XLSX.writeFile(wb, `${filename}.xlsx`)
 }
+
+export function exportTrocaPremiada(interessados, filename = 'troca-premiada') {
+  const ws = XLSX.utils.json_to_sheet(
+    interessados.map(v => ({
+      'PDV': v.nomeFantasia,
+      'Cidade': v.cidade,
+      'UF': v.estado,
+      'Promotor': v.colaborador,
+      'Data Visita': v.dataStr,
+      'Telefone': v.telefone,
+      'Volume Mensal': v.volumeMensal,
+      'Share FB': v.shareFB,
+      'Já Compra FB': v.jaCompraFB,
+      'Tempo Tampinhas': v.tempoTampinhas,
+      'Prêmios Desejados': v.premiosDesejados,
+    }))
+  )
+  ws['!cols'] = [
+    { wch: 30 }, { wch: 16 }, { wch: 5 }, { wch: 22 }, { wch: 12 },
+    { wch: 16 }, { wch: 18 }, { wch: 14 }, { wch: 14 }, { wch: 20 }, { wch: 30 },
+  ]
+  const wb = XLSX.utils.book_new()
+  XLSX.utils.book_append_sheet(wb, ws, 'Interessados Troca Premiada')
+  XLSX.writeFile(wb, `${filename}.xlsx`)
+}

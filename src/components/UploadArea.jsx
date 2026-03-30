@@ -32,12 +32,7 @@ export default function UploadArea({ onFileLoaded, isLoading }) {
     <div className="min-h-screen flex items-center justify-center p-6 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
       <div className="w-full max-w-lg">
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-fb-navy flex items-center justify-center">
-              <FileSpreadsheet className="w-5 h-5 text-white" />
-            </div>
-            <h1 className="text-2xl font-bold text-fb-navy tracking-tight">Filtros Brasil</h1>
-          </div>
+          <img src="/logo-full.svg" alt="Filtros Brasil" className="h-12 mx-auto mb-3" />
           <p className="text-slate-500 text-sm">Dashboard de visitas da promotoria</p>
         </div>
 
